@@ -70,16 +70,17 @@ public class CategoryControllerTest {
 
         when(categoryService.getCategoryByName(anyString())).thenReturn(category1);
 
-        /*mockMvc.perform(get("/api/v1/categories/Jim")
+        mockMvc.perform(get("/api/v1/categories/Jim")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", equalTo(NAME)));
-        */
         
+        /*
         mockMvc.perform(get("/api/v1/categories/Jim")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.name", equalTo(NAME)));
+                */
     }
 
 }
