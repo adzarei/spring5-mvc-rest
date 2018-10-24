@@ -35,6 +35,7 @@ public class CustomerMapperTest {
 
         //When
         CustomerDTO customerDTO = customerMapper.customerToCustomerDTO(customer);
+        customerDTO.setCustomerUrl(URL);
 
         //Then
         assertEquals(ID,customerDTO.getId());

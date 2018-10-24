@@ -47,6 +47,7 @@ public class CustomerServiceTest {
 
         //When
         CustomerDTO customerDTO = customerService.getCustomerById(ID);
+        customerDTO.setCustomerUrl(URL);
 
         //Then
         assertEquals(ID,customerDTO.getId());
