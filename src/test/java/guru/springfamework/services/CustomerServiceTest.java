@@ -31,7 +31,7 @@ public class CustomerServiceTest {
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
-        customerService = new CustomerServiceImpl(customerRepository, CustomerMapper.INSTANCE);
+        customerService = new CustomerServiceImpl(CustomerMapper.INSTANCE, customerRepository);
     }
 
     @Test
